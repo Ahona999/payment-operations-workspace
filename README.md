@@ -9,6 +9,8 @@
 
 **From fragmented payment signals to evidence-backed resolution.**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-087F5B?style=for-the-badge&logo=vercel&logoColor=white)](https://payment-operations-workspace.vercel.app/)
+
 ![React 19.3.1](https://img.shields.io/badge/React-19.3.1-145c4b?style=flat-square&logo=react&logoColor=white)
 ![TypeScript 5.9.3](https://img.shields.io/badge/TypeScript-5.9.3-145c4b?style=flat-square&logo=typescript&logoColor=white)
 ![Vite 7.3.8](https://img.shields.io/badge/Vite-7.3.8-145c4b?style=flat-square&logo=vite&logoColor=white)
