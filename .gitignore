@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.verification/
+.vercel/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+coverage/
+*.log
+*.local
+.DS_Store
+Thumbs.db

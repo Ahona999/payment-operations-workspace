@@ -1,0 +1,28 @@
+{
+  "name": "payment-operations-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "test:e2e": "node tests/run.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5",
+    "react": "^19",
+    "react-dom": "^19",
+    "recharts": "^3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "playwright": "^1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^7"
+  }
+}

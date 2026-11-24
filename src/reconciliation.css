@@ -1,0 +1,83 @@
+.reconciliation-workspace {
+  --recon-inset: 16px;
+  --recon-gap: 12px;
+  --recon-subtle: #53665c;
+  --recon-error: #a63b32;
+}
+.reconciliation-workspace .overview-heading { min-height: 60px; }
+.reconciliation-workspace .overview-heading p { margin-top: 4px; }
+.recon-summary { margin: 12px 0 16px; border-radius: 6px; }
+.recon-summary > div { padding-inline: 12px; }
+.recon-summary > div:nth-child(n+3) dd { color: var(--warning); }
+.recon-records { border-radius: 9px; }
+.recon-tabs { gap: 8px; padding-inline: var(--recon-inset); }
+.recon-tabs button:nth-child(1) { min-width: 163px; }
+.recon-tabs button:nth-child(2) { min-width: 192px; }
+.recon-tabs button:nth-child(3) { min-width: 150px; }
+.recon-toolbar { display: grid; grid-template-columns: minmax(90px, 484fr) minmax(120px, 156fr) minmax(115px, 148fr) minmax(105px, 144fr) 80px 76px; align-items: center; gap: 8px; padding-inline: var(--recon-inset); height: 36px; }
+.recon-toolbar .search, .recon-toolbar .button { height: 28px; min-height: 28px; font-size: 11px; }
+.recon-toolbar .search { background: var(--canvas); border-color: var(--border); gap: 8px; }
+.recon-toolbar .search img { max-width: 15px; max-height: 15px; }
+.recon-toolbar .case-control > .button { width: 100%; gap: 6px; color: var(--recon-subtle); }
+.recon-records table { min-width: 820px; }
+.recon-records thead, .recon-records th button { height: 28px; }
+.recon-records th, .recon-records td { padding: 0 9px; text-align: left; }
+.recon-records td { height: 34px; font-size: 11px; color: var(--recon-subtle); border-color: var(--border); }
+.recon-records td:nth-child(3), .recon-records th:nth-child(3) { padding-right: 9px; }
+.recon-records td:nth-child(n+3):nth-child(-n+5), .recon-records th:nth-child(n+3):nth-child(-n+5) { text-align: right; }
+.recon-records td:nth-child(6) .badge { min-width: 0; min-height: 18px; padding-inline: 7px; font-size: 10px; }
+.recon-records td:last-child .button { min-height: 20px; padding: 0 8px; font-size: 10px; line-height: 17px; }
+.recon-records .recon-selected-row, .recon-records .recon-selected-row:hover { background: var(--mint); }
+.recon-link { color: var(--brand); font-weight: 500; text-align: left; }
+.recon-link:hover:not(:disabled) { text-decoration: underline; }
+.recon-error { color: var(--recon-error, #a63b32) !important; }
+.recon-records td.warning-text { color: var(--warning); }
+.recon-records .empty-table { height: 98px; text-align: center; }
+.recon-pagination { display: flex; align-items: center; gap: 12px; padding: 0 var(--recon-inset); min-height: 23.5px; color: var(--recon-subtle); font-size: 10px; white-space: nowrap; }
+.recon-pagination > span:first-child { margin-right: auto; }
+.recon-pagination > .button { height: 23px; min-height: 23px; width: 28px; padding: 0; border-color: var(--border); }
+
+.recon-compare { margin-top: 12px; min-height: 242px; padding: 15px; border-radius: 9px; }
+.recon-selected { display: flex; align-items: center; gap: 12px; min-height: 20px; margin-bottom: 8px; color: var(--recon-subtle); font-size: 11px; }
+.recon-selected .badge { min-height: 20px; font-size: 10px; }
+.recon-linked { margin-left: auto; font-size: 11px; }
+.recon-comparison-grid { display: grid; grid-template-columns: minmax(0, 384fr) minmax(0, 384fr) minmax(0, 336fr); gap: var(--recon-gap); }
+.recon-source { min-height: 148px; min-width: 0; border: 1px solid var(--border); border-radius: 6px; background: var(--canvas); padding: 11px; }
+.recon-source > div:first-child { display: flex; justify-content: space-between; gap: 6px; align-items: center; }
+.recon-source h3, .recon-next h3 { font-size: 12px; line-height: 18px; font-weight: 600; }
+.recon-source small { font-size: 10px; color: var(--brand); white-space: nowrap; }
+.recon-source-amount { display: flex; gap: 8px; align-items: center; border-radius: 4px; padding: 0 5px; min-height: 28px; margin-top: 2px; }
+.recon-variance { background: var(--warning-surface); color: var(--warning); }
+.recon-source-amount strong { font-size: 22px; font-weight: 600; line-height: 28px; }
+.recon-source-amount span, .recon-source p { font-size: 10px; }
+.recon-source dl { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 3px 6px; font-size: 10px; line-height: 15px; margin-top: 3px; }
+.recon-source dt { color: var(--recon-subtle); }
+.recon-source dd { font-weight: 500; overflow-wrap: anywhere; }
+.recon-source p { color: var(--recon-subtle); margin-top: 4px; }
+.recon-field-difference { color: var(--recon-error); font-weight: 600; }
+.recon-next { min-width: 0; }
+.recon-next > p { color: var(--recon-subtle); font-size: 11px; line-height: 16px; margin: 6px 0; }
+.recon-next label { display: flex; align-items: center; gap: 7px; min-height: 18px; font-size: 11px; color: var(--recon-subtle); }
+.recon-next label input { width: 10px; height: 10px; }
+.recon-next > .button, .recon-next > div > .button { width: 100%; height: 30px; min-height: 30px; font-size: 11px; }
+.recon-next > .button { margin: 5px 0 6px; }
+.recon-next > .button:disabled { opacity: 1; background: #edf1ee; border-color: var(--border); color: var(--recon-subtle); }
+.recon-next > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.recon-audit { margin-top: 8px; min-height: 22px; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--recon-subtle); font-size: 10px; }
+.recon-audit button { flex: 0 0 auto; text-align: right; }
+.recon-empty { min-height: 88px; color: var(--recon-subtle); }
+
+@media (max-width: 1100px) {
+  .recon-toolbar { grid-template-columns: minmax(90px, 1fr) minmax(114px, 145px) minmax(104px, 1fr) minmax(98px, 1fr) 64px 60px; }
+  .recon-comparison-grid { grid-template-columns: 1fr 1fr; }
+  .recon-next { grid-column: 1 / -1; }
+}
+@media (max-width: 720px) {
+  .recon-tabs, .recon-pagination { overflow-x: auto; }
+  .recon-toolbar { height: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); padding-block: 6px; }
+  .recon-toolbar .search { grid-column: 1 / -1; }
+  .recon-toolbar .filter { min-width: 0; }
+  .recon-comparison-grid { grid-template-columns: 1fr; }
+  .recon-selected, .recon-audit { flex-wrap: wrap; }
+  .recon-linked { margin-left: 0; }
+}
